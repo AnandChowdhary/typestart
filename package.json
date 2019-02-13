@@ -1,0 +1,22 @@
+{
+  "name": "typestart",
+  "version": "1.0.0",
+  "description": "Typescript DOM library starter template",
+  "main": "index.js",
+  "repository": "git@github.com:AnandChowdhary/typestart.git",
+  "author": "Anand Chowdhary <anandchowdhary@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c rollup.config.ts -w",
+    "build": "tsc --module umd && rollup -c rollup.config.ts",
+    "prettier-watch": "onchange '**/*.{js,jsx,ts,tsx,sass,css}' -- prettier --write {{changed}}"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4",
+    "rollup": "^1.1.2",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript2": "^0.19.2",
+    "tslib": "^1.9.3",
+    "typescript": "^3.3.3"
+  }
+}
