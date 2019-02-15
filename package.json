@@ -12,14 +12,16 @@
   "author": "Anand Chowdhary <anandchowdhary@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "rollup -cw rollup.config.ts",
+    "start": "rollup -c rollup.config.ts -w",
     "build": "rollup -c rollup.config.ts",
-    "prettier-watch": "onchange '**/*.{js,jsx,ts,tsx,sass,css}' -- prettier --write {{changed}}"
+    "prettier-watch": "onchange 'src/**/*.{js,jsx,ts,tsx,sass,css}' -- prettier --write {{changed}}"
   },
   "devDependencies": {
     "prettier": "^1.16.4",
     "rollup": "^1.1.2",
+    "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.19.2",
     "typescript": "^3.3.3"

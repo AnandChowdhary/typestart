@@ -1,6 +1,8 @@
 import typescript from "rollup-plugin-typescript2";
 import sourceMaps from "rollup-plugin-sourcemaps";
+import liveReload from "rollup-plugin-livereload";
 import resolve from "rollup-plugin-node-resolve";
+import serve from "rollup-plugin-serve";
 
 const pkg = require("./package.json");
 
@@ -10,7 +12,7 @@ export default {
     {
       file: pkg.main,
       name: pkg.main,
-      format: "umd"
+      format: "iife"
     },
     {
       file: pkg.module,
@@ -24,5 +26,14 @@ export default {
   watch: {
     include: "src/**"
   },
-  plugins: [typescript(), resolve(), sourceMaps()]
+  plugins: [
+    typescript(),
+    resolve(),
+    sourceMaps(),
+    // liveReload(),
+    // serve({
+    //   open: true,
+    //   contentBase: ["./demo", "dist"]
+    // })
+  ]
 };
