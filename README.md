@@ -1,4 +1,4 @@
-# Typestart
+# 📦 Typestart
 
 [![Travis CI](https://img.shields.io/travis/AnandChowdhary/typestart.svg)](https://travis-ci.org/AnandChowdhary/typestart)
 [![Coverage Status](https://coveralls.io/repos/github/AnandChowdhary/typestart/badge.svg?branch=master)](https://coveralls.io/github/AnandChowdhary/typestart?branch=master)
@@ -17,7 +17,7 @@ Typestart is a web/DOM library starter with these features:
 - [x] Build with Travis CI
 - [x] Clean with Prettier
 
-## Getting started
+## ⭐ Getting started
 
 Clone and start your project:
 
@@ -34,16 +34,10 @@ Setup GitHub Pages demo by going to Settings → GitHub Pages → Source → mas
 
 ### Development
 
-Start development server with HMR:
+Start development server with HMR and prettier:
 
 ```bash
 yarn start
-```
-
-In a separate terminal, start Prettier:
-
-```bash
-yarn prettier-watch
 ```
 
 ### Production
@@ -54,12 +48,38 @@ Build a production verion:
 yarn build
 ```
 
-## Why another starter?
+## 🛠️ Using a Typestart library
+
+Install the library as a dependency:
+
+```bash
+npm install typestart
+```
+
+Or, if you're using Yarn:
+
+```bash
+yarn add typestart
+```
+
+Then import the library:
+
+```js
+import Typestart from "typestart";
+```
+
+And initialize it with an optional selector:
+
+```js
+const typestart = new Typestart("#heading");
+```
+
+## 💡 Why another starter?
 
 I've used a bunch of different Typescript library starters, but they all have tons of boilterplate (super long build rules, scripts for releases, publishing, building, etc.) 
 
 Typestart is—like the name suggests—a starting point.
 
-## License
+## 📝 License
 
 Unlicense (public domain, do whatever you want)
