@@ -1,1 +1,1 @@
-var library = new window.Library();
+var library = new window.Library("strong");

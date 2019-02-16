@@ -1,20 +1,21 @@
 # Typestart
 
+[![Travis CI](https://img.shields.io/travis/AnandChowdhary/typestart.svg)](https://travis-ci.org/AnandChowdhary/typestart)
+[![Coverage Status](https://coveralls.io/repos/github/AnandChowdhary/typestart/badge.svg?branch=master)](https://coveralls.io/github/AnandChowdhary/typestart?branch=master)
+[![GitHub](https://img.shields.io/github/license/anandchowdhary/typestart.svg)](https://github.com/AnandChowdhary/typestart/blob/master/LICENSE)
+![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/AnandChowdhary/typestart.svg)
+[![Minzipped size](https://img.shields.io/bundlephobia/minzip/typestart.svg)](https://www.npmjs.com/package/typestart)
+
 Typestart is a web/DOM library starter with these features:
 
-[![Travis CI](https://img.shields.io/travis/AnandChowdhary/typestart.svg)](https://travis-ci.org/AnandChowdhary/typestart)
-[![Minzipped size](https://img.shields.io/bundlephobia/minzip/typestart.svg)](https://www.npmjs.com/package/typestart)
-[![GitHub](https://img.shields.io/github/license/anandchowdhary/typestart.svg)](https://github.com/AnandChowdhary/add-to-calendar/blob/master/LICENSE)
-![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/AnandChowdhary/typestart.svg)
-
-- Written in Typescript
-- Built-in demo with GitHub pages (`./docs/` folder)
-- main/module/types in `package.json`
-- Bundled as UMD (works as a module)
-- Exposes `window.Library` (works with CDNs)
-- Test with Jest
-- Build with Travis CI
-- Clean with Prettier
+- [x] Written in Typescript
+- [x] Built-in demo with GitHub pages (`./docs/` folder)
+- [x] main/module/types in `package.json`
+- [x] Bundled as UMD (works as a module)
+- [x] Exposes `window.Library` (works with CDNs)
+- [x] Test with Jest
+- [x] Build with Travis CI
+- [x] Clean with Prettier
 
 ## Getting started
 

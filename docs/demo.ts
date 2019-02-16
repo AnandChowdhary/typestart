@@ -1,1 +1,1 @@
-const library = new (<any> window).Library();
+const library = new (<any> window).Library("strong");
