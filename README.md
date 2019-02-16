@@ -74,6 +74,12 @@ And initialize it with an optional selector:
 const typestart = new Typestart("#heading");
 ```
 
+You can also use a CDN:
+
+```html
+<script src="https://unpkg.com/typestart"></script>
+```
+
 ## 💡 Why another starter?
 
 I've used a bunch of different Typescript library starters, but they all have tons of boilterplate (super long build rules, scripts for releases, publishing, building, etc.) 
