@@ -1,6 +1,6 @@
 {
   "name": "typestart",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Typescript DOM library starter template",
   "main": "docs/index.js",
   "module": "docs/index.js",
@@ -16,7 +16,7 @@
     "build": "tsc docs/demo.ts && webpack --config webpack.config.ts",
     "watch": "onchange 'src/**/*.{js,jsx,ts,tsx,sass,css}' -- yarn build",
     "serve": "cd docs && live-server && cd ../",
-    "test": "jest --coverage",
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "prettier-watch": "onchange 'src/**/*.{js,jsx,ts,tsx,sass,css}' -- prettier --write {{changed}}"
   },
   "devDependencies": {
@@ -24,6 +24,7 @@
     "@types/node": "^11.9.4",
     "@types/webpack": "^4.4.24",
     "concurrently": "^4.1.0",
+    "coveralls": "^3.0.2",
     "jest": "^24.1.0",
     "live-server": "^1.2.1",
     "onchange": "^5.2.0",
@@ -37,10 +38,20 @@
     "webpack-cli": "^3.2.3"
   },
   "jest": {
-    "roots": ["<rootDir>/src/", "<rootDir>/tests/"],
+    "roots": [
+      "<rootDir>/src/",
+      "<rootDir>/tests/"
+    ],
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
