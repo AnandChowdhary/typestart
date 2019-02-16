@@ -24,7 +24,7 @@ Find and replace "typestart" with your library name and "AnandChowdhary" with yo
 
 ### GitHub configuration
 
-Setup GitHub Pages demo by going to Settings --> GitHub Pages --> Use "docs" folder.
+Setup GitHub Pages demo by going to Settings → GitHub Pages → Source → master branch /docs folder.
 
 ### Development
 
