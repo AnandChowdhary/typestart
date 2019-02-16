@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Typescript DOM library starter template",
   "main": "docs/index.js",
-  "module": "docs/index.es.js",
+  "module": "docs/index.js",
   "types": "docs/index.d.ts",
   "files": [
     "docs"
@@ -13,14 +13,18 @@
   "license": "Unlicense",
   "scripts": {
     "build": "webpack --config webpack.config.ts",
-    "watch": "webpack-dev-server --config webpack.config.ts",
+    "start": "webpack-dev-server --config webpack.config.ts",
     "prettier-watch": "onchange 'src/**/*.{js,jsx,ts,tsx,sass,css}' -- prettier --write {{changed}}"
   },
   "devDependencies": {
+    "@types/node": "^11.9.4",
+    "@types/webpack": "^4.4.24",
+    "@types/webpack-dev-server": "^3.1.2",
     "onchange": "^5.2.0",
-    "parcel-bundler": "^1.11.0",
     "prettier": "^1.16.4",
     "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
+    "tsc": "^1.20150623.0",
     "typescript": "^3.3.3",
     "webpack": "^4.29.4",
     "webpack-cli": "^3.2.3",

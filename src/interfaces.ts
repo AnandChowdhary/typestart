@@ -1,5 +1,5 @@
 interface LibraryInterface {
-  value?: Boolean;
+  value?: string;
 }
 
 export { LibraryInterface };

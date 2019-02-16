@@ -1,5 +1,5 @@
 import { LibraryInterface } from "./interfaces";
-export declare class Library implements LibraryInterface {
-    value: Boolean;
+export default class Library implements LibraryInterface {
+    value: string;
     constructor();
 }

@@ -9,6 +9,7 @@ Typestart is a web/DOM library starter with these features:
 - Exposes `window.Library` (works with CDNs)
 - Test with Jest
 - Build with Travis CI
+- Clean with Prettier
 
 ## Getting started
 
@@ -17,6 +18,34 @@ Clone and start your project:
 ```bash
 git clone git@github.com:AnandChowdhary/typestart
 cd typestart && git init
+```
+
+Find and replace "typestart" with your library name and "AnandChowdhary" with your GitHub username.
+
+### GitHub configuration
+
+Setup GitHub Pages demo by going to Settings --> GitHub Pages --> Use "docs" folder.
+
+### Development
+
+Start development server with HMR:
+
+```bash
+yarn start
+```
+
+In a separate terminal, start Prettier:
+
+```bash
+yarn prettier-watch
+```
+
+### Production
+
+Build a production verion:
+
+```bash
+yarn build
 ```
 
 ## Why another starter?

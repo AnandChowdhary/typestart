@@ -1,10 +1,13 @@
 import { LibraryInterface } from "./interfaces";
+import { random } from "./random";
 
-export class Library implements LibraryInterface {
-  value: Boolean;
+export default class Library implements LibraryInterface {
+  value: string;
   constructor() {
-    this.value = true;
-    console.log("HEllo, world!");
+    this.value = random();
+    const valueElement: HTMLElement | null = document.querySelector("strong");
+    if (valueElement) valueElement.innerHTML = this.value;
+    console.log("The value is", this.value);
   }
 }
 
