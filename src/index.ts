@@ -7,7 +7,7 @@ export default class Library implements LibraryInterface {
     this.value = random();
     const valueElement: HTMLElement | null = document.querySelector("strong");
     if (valueElement) valueElement.innerHTML = this.value;
-    console.log("The value is", this.value);
+    console.log("The random value is", this.value);
   }
 }
 

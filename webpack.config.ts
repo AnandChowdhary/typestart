@@ -20,11 +20,6 @@ const config: webpack.Configuration = {
     filename: "index.js",
     path: path.resolve(__dirname, "docs"),
     libraryTarget: "umd"
-  },
-  devServer: {
-    contentBase: path.join(__dirname, "docs"),
-    compress: true,
-    port: 9000
   }
 };
 

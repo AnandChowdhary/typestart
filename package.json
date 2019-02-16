@@ -12,14 +12,17 @@
   "author": "Anand Chowdhary <anandchowdhary@gmail.com>",
   "license": "Unlicense",
   "scripts": {
-    "build": "webpack --config webpack.config.ts",
-    "start": "webpack-dev-server --config webpack.config.ts",
+    "start": "concurrently \"yarn watch\" \"yarn serve\" \"yarn prettier-watch\"",
+    "build": "tsc docs/demo.ts && webpack --config webpack.config.ts",
+    "watch": "onchange 'src/**/*.{js,jsx,ts,tsx,sass,css}' -- yarn build",
+    "serve": "cd docs && live-server && cd ../",
     "prettier-watch": "onchange 'src/**/*.{js,jsx,ts,tsx,sass,css}' -- prettier --write {{changed}}"
   },
   "devDependencies": {
     "@types/node": "^11.9.4",
     "@types/webpack": "^4.4.24",
-    "@types/webpack-dev-server": "^3.1.2",
+    "concurrently": "^4.1.0",
+    "live-server": "^1.2.1",
     "onchange": "^5.2.0",
     "prettier": "^1.16.4",
     "ts-loader": "^5.3.3",
@@ -27,7 +30,6 @@
     "tsc": "^1.20150623.0",
     "typescript": "^3.3.3",
     "webpack": "^4.29.4",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-cli": "^3.2.3"
   }
 }
