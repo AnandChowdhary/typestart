@@ -23,7 +23,8 @@ Clone and start your project:
 
 ```bash
 git clone git@github.com:AnandChowdhary/typestart
-cd typestart && git init
+mv typestart my-library && cd my-library
+sudo rm -r .git && git init
 ```
 
 Find and replace "typestart" with your library name and "AnandChowdhary" with your GitHub username.
