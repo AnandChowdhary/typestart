@@ -2,28 +2,28 @@
   "name": "typestart",
   "version": "1.0.0",
   "description": "Typescript DOM library starter template",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "types": "dist/types/index.d.ts",
+  "main": "docs/index.js",
+  "module": "docs/index.es.js",
+  "types": "docs/index.d.ts",
   "files": [
-    "dist"
+    "docs"
   ],
   "repository": "git@github.com:AnandChowdhary/typestart.git",
   "author": "Anand Chowdhary <anandchowdhary@gmail.com>",
-  "license": "MIT",
+  "license": "Unlicense",
   "scripts": {
-    "start": "rollup -c rollup.config.ts -w",
-    "build": "rollup -c rollup.config.ts",
+    "build": "webpack --config webpack.config.ts",
+    "watch": "webpack-dev-server --config webpack.config.ts",
     "prettier-watch": "onchange 'src/**/*.{js,jsx,ts,tsx,sass,css}' -- prettier --write {{changed}}"
   },
   "devDependencies": {
+    "onchange": "^5.2.0",
+    "parcel-bundler": "^1.11.0",
     "prettier": "^1.16.4",
-    "rollup": "^1.1.2",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-serve": "^1.0.1",
-    "rollup-plugin-sourcemaps": "^0.4.2",
-    "rollup-plugin-typescript2": "^0.19.2",
-    "typescript": "^3.3.3"
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
   }
 }

@@ -7,3 +7,5 @@ export class Library implements LibraryInterface {
     console.log("HEllo, world!");
   }
 }
+
+(<any>window).Library = Library;
