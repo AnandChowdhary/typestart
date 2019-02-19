@@ -43,7 +43,7 @@ yarn start
 
 ### Production
 
-Build a production verion:
+Build a production version:
 
 ```bash
 yarn build
@@ -83,7 +83,7 @@ You can also use a CDN:
 
 ## 💡 Why another starter?
 
-I've used a bunch of different Typescript library starters, but they all have tons of boilterplate (super long build rules, scripts for releases, publishing, building, etc.) 
+I've used a bunch of different Typescript library starters, but they all have tons of boilerplate (super long build rules, scripts for releases, publishing, building, etc.) 
 
 Typestart is—like the name suggests—a starting point.
 
