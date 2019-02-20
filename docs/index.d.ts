@@ -1,5 +1,6 @@
-import { LibraryInterface } from "./interfaces";
-export default class Library implements LibraryInterface {
+import { Typerface } from "./interfaces";
+import "./styles/index.scss";
+export default class Typestart implements Typerface {
     value: string;
     constructor(el?: string);
 }

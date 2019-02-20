@@ -1,1 +1,1 @@
-var library = new window.Library("strong");
+var typestart = new window.Typestart("strong");

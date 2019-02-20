@@ -1,1 +1,1 @@
-const library = new (<any> window).Library("strong");
+const typestart = new (<any> window).Typestart("strong");

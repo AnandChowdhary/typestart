@@ -1,4 +1,4 @@
-interface LibraryInterface {
+interface Typerface {
     value?: string;
 }
-export { LibraryInterface };
+export { Typerface };

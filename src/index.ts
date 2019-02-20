@@ -1,7 +1,8 @@
-import { LibraryInterface } from "./interfaces";
+import { Typerface } from "./interfaces";
 import { random } from "./random";
+import "./styles/index.scss";
 
-export default class Library implements LibraryInterface {
+export default class Typestart implements Typerface {
   value: string;
   constructor(el?: string) {
     this.value = random();
@@ -13,4 +14,4 @@ export default class Library implements LibraryInterface {
   }
 }
 
-(<any>window).Library = Library;
+(<any>window).Typestart = Typestart;
