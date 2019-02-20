@@ -13,6 +13,7 @@ Typestart is a web/DOM library starter with these features:
 - [x] main/module/types in `package.json`
 - [x] Bundled as UMD (works as a module)
 - [x] Exposes `window.Library` (works with CDNs)
+- [x] Style with Sass
 - [x] Test with Jest
 - [x] Build with Travis CI
 - [x] Clean with Prettier
