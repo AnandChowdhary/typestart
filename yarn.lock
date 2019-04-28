@@ -332,8 +332,8 @@
     source-map "^0.6.1"
 
 "@types/webpack@^4.4.24":
-  version "4.4.27"
-  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.4.27.tgz#8bb9429185977a6b3b9e6e6132f561066aa7e7c2"
+  version "4.4.28"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.4.28.tgz#5286d426dc6475edbeb69789fa98d96a4e1e1640"
   dependencies:
     "@types/anymatch" "*"
     "@types/node" "*"
