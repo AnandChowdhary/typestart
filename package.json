@@ -60,5 +60,8 @@
       "json",
       "node"
     ]
+  },
+  "dependencies": {
+    "mitt": "^1.1.3"
   }
 }

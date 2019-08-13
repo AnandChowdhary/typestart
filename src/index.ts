@@ -1,10 +1,17 @@
-import { Typerface } from "./interfaces";
+import TypeStart from "./typestart";
 import { random } from "./random";
 import "./styles/index.scss";
 
-export default class Typestart implements Typerface {
+declare global {
+  interface Window {
+    LibraryName: typeof LibraryName;
+  }
+}
+
+export default class LibraryName extends TypeStart {
   value: string;
   constructor(el?: string) {
+    super();
     this.value = random();
     const valueElement: HTMLElement | null = document.querySelector(
       el || "strong"
@@ -14,4 +21,4 @@ export default class Typestart implements Typerface {
   }
 }
 
-(<any>window).Typestart = Typestart;
+window.LibraryName = LibraryName;
