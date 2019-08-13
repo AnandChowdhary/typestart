@@ -1,6 +1,11 @@
-import { Typerface } from "./interfaces";
+import TypeStart from "./typestart";
 import "./styles/index.scss";
-export default class Typestart implements Typerface {
+declare global {
+    interface Window {
+        LibraryName: typeof LibraryName;
+    }
+}
+export default class LibraryName extends TypeStart {
     value: string;
     constructor(el?: string);
 }
